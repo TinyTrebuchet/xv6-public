@@ -93,5 +93,10 @@ sys_uptime(void)
 int
 sys_getmem(void)
 {
-    return myproc()->sz;
+  return myproc()->sz;
+}
+
+int sys_getallmem(void)
+{
+  return getallmem();
 }
